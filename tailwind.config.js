@@ -30,8 +30,6 @@ module.exports = {
       },
     },
 
-
-
     fontSize: {
       '8xl': ['120px', {
         lineHeight: '120px',
@@ -124,6 +122,10 @@ module.exports = {
     }
   ],
     
+    },
+    borderRadius: {
+      DEFAULT: '4px',
+      full:"9999px",
     },
     extend: {},
   },

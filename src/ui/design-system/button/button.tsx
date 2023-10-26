@@ -1,15 +1,16 @@
+import { IconProps } from "@/types/iconProps";
 import clsx from "clsx";
+import { Spinner } from "../spinner/spinner";
 
 interface Props{
     size?: "small"| "medium"|"large"
     variant?: "accent"|"secondary"|"outline"|"disabled"|"ico";
-    icon?: any;
+    icon?: IconProps;
     iconTheme?: "accent"|"secondary"|"gray";
     iconPosition?: "left"|"right";
     disabled?: boolean;
     isLoading?: boolean;
     children?: React.ReactNode;
-
 }
 
 
@@ -43,19 +44,39 @@ export const Button=({
             variantStyles = "bg-gray-400 border border-gray-500 text-gray-600 rounded cursor-not-allowed";
             break;
         case "ico":
-            variantStyles = "";
+                if(iconTheme==="accent"){ //DEFAULT
+                    variantStyles =
+                    "bg-primary hover:bg-primary-400 text-white rounded-full"
+                }
+                if(iconTheme==="secondary"){
+                    variantStyles =
+                    "bg-primary-200 hover:bg-primary-300/50 text-primary rounded-full"
+                }
+                if(iconTheme==="gray"){
+                    variantStyles =
+                    "bg-gray-700 hover:bg-gray-600 text-white rounded-full"
+                }
             break;
     }
 
     switch (size) {
         case "small":
-            sizeStyles="text-caption3 font-meduim px-[14px] py-[12px]";
+            sizeStyles=`text-caption3 font-meduim ${
+                variant==="ico"? " flex items-center justify-center w-[40px] h-[40px]" : "px-[14px] py-[12px]"
+            } `;
+            icoSize=18;
             break;
         case "medium"://DEFAULT
-            sizeStyles="text-caption2 font-meduim px-[18px] py-[15px]";
+            sizeStyles=`text-caption2 font-meduim ${
+                variant==="ico"? "flex items-center justify-center w-[50px] h-[50px]" :"px-[18px] py-[15px]"
+            } `;
+            icoSize=20;
             break;
         case "large":
-            sizeStyles="text-caption1 font-meduim px-[22px] py-[18px]";
+            sizeStyles=`text-caption1 font-meduim ${
+                variant==="ico"? "flex items-center justify-center w-[60px] h-[60px]" :"px-[22px] py-[18px]"
+            } `;
+            icoSize=24;
             break;
 
     }
@@ -64,11 +85,33 @@ export const Button=({
         <>
             <button
                 type="button"
-                className={clsx(variantStyles,icoSize,sizeStyles, "")} 
+                className={clsx(variantStyles,icoSize,sizeStyles, isLoading && "cursor-wait")} 
                 onClick={()=>console.log("click")} 
                 disabled={disabled}
             >
+                
+                {isLoading &&(
+                    <div className="">
+                        <Spinner size="small"/>
+                    
+                </div>)}:
+
+            <div className={clsx(isLoading && "invisible")}>
+                {icon && variant === "ico"? (
+                <icon.icon size={icoSize}/>
+                ):(
+                
+                <div className=" flex gap-4 items-center">
+                    {icon && iconPosition ==="left" && (
+                         <icon.icon size={icoSize}/>
+                    )}                
                 {children}
+                {icon && iconPosition ==="right" && (
+                         <icon.icon size={icoSize}/>
+                    )}       
+                </div>    
+                )}
+                </div>
             </button>
         </>
     );
