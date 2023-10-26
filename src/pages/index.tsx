@@ -1,4 +1,5 @@
 import { Button } from "@/ui/design-system/button/button";
+import { Logo } from "@/ui/design-system/logo/logo";
 import { Spinner } from "@/ui/design-system/spinner/spinner";
 import { Typography } from "@/ui/design-system/typography/typography";
 import { RiAccountBoxLine, RiUser2Fill } from "react-icons/ri";
@@ -190,7 +191,20 @@ export default function Home() {
             </div>
           </div>
         </div>
+          {/* logo */}
+            <div>
+          <Typography variant="caption2" weight="medium">
+            Logo
+          </Typography>
+          <div className="flex items-center gap-2 p-5 border-gray-400 rounded">
+         <Logo size="very-small"/>
+         <Logo size="small"/>
+         <Logo/>
+         <Logo size="large"/>
+          </div>
+        </div>
       </div>
+      
     </>
   );
 }
