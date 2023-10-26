@@ -1,76 +1,196 @@
 import { Button } from "@/ui/design-system/button/button";
 import { Spinner } from "@/ui/design-system/spinner/spinner";
 import { Typography } from "@/ui/design-system/typography/typography";
-import{ RiUser2Fill,}from "react-icons/ri"
+import { RiAccountBoxLine, RiUser2Fill } from "react-icons/ri";
 
 export default function Home() {
-  return ( 
-<>
-  <div className="flex items-center gap-4 p-10">
-      <Spinner size="small"/>
-      <Spinner/>
-      <Spinner size="large"/>
-      <Button size="small" variant="accent"> Accent </Button>
-      <Button size="small" variant="secondary"> Accent </Button>
-      <Button size="small" variant="outline"> Accent </Button>
-      <Button size="small" variant="disabled"> Accent </Button>
-      <Button size="small" variant="ico" icon={{icon:RiUser2Fill}} />
-      <Button size="small" icon={{icon:RiUser2Fill}}> Accent </Button>
-      <Button size="small" icon={{icon:RiUser2Fill}} iconPosition="left"> Accent </Button>
-    
-  </div>
-  <div className="flex items-center gap-4 p-10">
-      <Button  variant="accent"> Accent </Button>
-      <Button  variant="secondary"> Accent </Button>
-      <Button  variant="outline"> Accent </Button>
-      <Button  variant="disabled"> Accent </Button>
-      <Button  variant="ico" icon={{icon:RiUser2Fill}} />
-    
-  </div>
-  <div className="flex items-center gap-4 p-10">
-      <Button size="large" variant="accent"> Accent </Button>
-      <Button size="large" variant="secondary"> Accent </Button>
-      <Button size="large" variant="outline"> Accent </Button>
-      <Button size="large" variant="disabled"> Accent </Button>
-      <Button size="large" variant="ico" icon={{icon:RiUser2Fill}}  />
-      <Button size="large" variant="ico" icon={{icon:RiUser2Fill}} iconTheme="secondary"/>
-      <Button size="large" variant="ico" icon={{icon:RiUser2Fill}} iconTheme="gray"/>
-    
+  return (
+    <>
+      {/* Typography */}
+      <div className="space-y-2">
+        <Typography variant="caption2" weight="medium">
+          Typography
+        </Typography>
+        <div className="flex flex-col gap-2 p-5 border-gray-400 divide-y-2 divide-gray-400 rounded">
+          <Typography variant="caption3" weight="medium">
+            display
+          </Typography>
+          <Typography variant="display">Nothing is impossible</Typography>
+        </div>
 
+        <div className="flex flex-col  gap-2 p-5 border-gray-400 divide-y-2 divide-gray-400 rounded">
+          <Typography variant="h1" weight="medium">
+            h1
+          </Typography>
+          <Typography variant="h1">
+            Nothing is impossible,the word isself says,I'm possible!
+          </Typography>
+        </div>
+        <div className="flex flex-col  gap-2 p-5 border-gray-400 divide-y-2 divide-gray-400 rounded">
+          <Typography variant="h2" weight="medium">
+            h2
+          </Typography>
+          <Typography variant="h2">
+            Nothing is impossible,the word isself says,I'm possible!
+          </Typography>
+        </div>
+        <div className="flex flex-col  gap-2 p-5 border-gray-400 divide-y-2 divide-gray-400 rounded">
+          <Typography variant="h3" weight="medium">
+            h3
+          </Typography>
+          <Typography variant="h3">
+            Nothing is impossible,the word isself says,I'm possible!
+          </Typography>
+        </div>
+        <div className="flex flex-col  gap-2 p-5 border-gray-400 divide-y-2 divide-gray-400 rounded">
+          <Typography variant="h4" weight="medium">
+            h4
+          </Typography>
+          <Typography variant="h4">
+            Nothing is impossible,the word isself says,I'm possible!
+          </Typography>
+        </div>
+        <div className="flex flex-col  gap-2 p-5 border-gray-400 divide-y-2 divide-gray-400 rounded">
+          <Typography variant="body-lg" weight="medium">
+            body-lg
+          </Typography>
+          <Typography variant="body-lg">
+            Nothing is impossible,the word isself says,I'm possible!
+          </Typography>
+        </div>
+        <div className="flex flex-col  gap-2 p-5 border-gray-400 divide-y-2 divide-gray-400 rounded">
+          <Typography variant="body-base" weight="medium">
+            body-base
+          </Typography>
+          <Typography variant="body-base">
+            Nothing is impossible,the word isself says,I'm possible!
+          </Typography>
+        </div>
+        <div className="flex flex-col  gap-2 p-5 border-gray-400 divide-y-2 divide-gray-400 rounded">
+          <Typography variant="body-sm" weight="medium">
+            body-sm
+          </Typography>
+          <Typography variant="body-sm">
+            Nothing is impossible,the word isself says,I'm possible!
+          </Typography>
+        </div>
+        <div className="flex flex-col  gap-2 p-5 border-gray-400 divide-y-2 divide-gray-400 rounded">
+          <Typography variant="caption1" weight="medium">
+            caption1
+          </Typography>
+          <Typography variant="caption1">
+            Nothing is impossible,the word isself says,I'm possible!
+          </Typography>
+        </div>
+        <div className="flex flex-col  gap-2 p-5 border-gray-400 divide-y-2 divide-gray-400 rounded">
+          <Typography variant="caption2" weight="medium">
+            caption2
+          </Typography>
+          <Typography variant="caption2">
+            Nothing is impossible,the word isself says,I'm possible!
+          </Typography>
+        </div>
+        <div className="flex flex-col  gap-2 p-5 border-gray-400 divide-y-2 divide-gray-400 rounded">
+          <Typography variant="caption3" weight="medium">
+            caption3
+          </Typography>
+          <Typography variant="caption3">
+            Nothing is impossible,the word isself says,I'm possible!
+          </Typography>
+        </div>
+        <div className="flex flex-col  gap-2 p-5 border-gray-400 divide-y-2 divide-gray-400 rounded">
+          <Typography variant="caption4" weight="medium">
+            caption4
+          </Typography>
+          <Typography variant="caption4">
+            Nothing is impossible,the word isself says,I'm possible!
+          </Typography>
+        </div>
+      </div>
 
-    
-  </div>
-  <div className="flex items-center gap-4 p-10">
-      <Button isLoading size="large" variant="accent"> Accent </Button>
-      <Button isLoading size="large" variant="secondary"> Accent </Button>
-      <Button isLoading size="large" variant="outline"> Accent </Button>
-      <Button isLoading size="large" variant="disabled"> Accent </Button>
-      <Button isLoading size="large" variant="ico" icon={{icon:RiUser2Fill}}  />
-      <Button isLoading size="large" variant="ico" icon={{icon:RiUser2Fill}} iconTheme="secondary"/>
-      <Button isLoading size="large" variant="ico" icon={{icon:RiUser2Fill}} iconTheme="gray"/>
-    
-
-
-    
-  </div>
-</>
-  // <div className="space-y-5">
-  
-  // <Typography variant="display" component="div">
-  //   coders Romain
-  // </Typography>
-  // <Typography  theme="primary" variant="body-lg" component="h1">
-  //   coders Romain
-  // </Typography>
-  // <Typography theme="secondary" variant="lead" component="div">
-  //   coders Romain
-  // </Typography>
-  // <Typography variant="body-sm" component="div">
-  //   coders Romain
-  // </Typography>
-  // <Typography variant="caption4" weight="medium" component="div">
-  //   coders Romain
-  // </Typography>
-  // </div>
+      <div className="flex items-start gap-7">
+        {/* Spinner */}
+        <div>
+          <Typography variant="caption2" weight="medium">
+            Spinners
+          </Typography>
+          <div className="flex items-center gap-2 p-5 border-gray-400 rounded">
+            <Spinner size="small" />
+            <Spinner />
+            <Spinner size="large" />
+          </div>
+        </div>
+      </div>
+      {/*Button */}
+      <div className="space-y-2">
+        <Typography variant="caption2" weight="medium">
+          Buttons
+        </Typography>
+        <div className="p-5 space-y-8 border-gray-400 rounded">
+          <div className="space-y-2">
+            <Typography variant="caption3" weight="medium">
+              Small
+            </Typography>
+            <div className="space-y-4">
+              <div className="flex items-center gap-2">
+                <Button isLoading size="small">
+                  Accent
+                </Button>
+                <Button isLoading size="small" icon={{icon:RiUser2Fill}}>
+                  Accent
+                </Button>
+                <Button isLoading size="small" variant="secondary">
+                  Accent
+                </Button>
+                <Button isLoading size="small" variant="ico">
+                  Accent
+                </Button>
+                <Button isLoading size="small" variant="accent" icon={{icon:RiUser2Fill}}>
+                  Accent
+                </Button>
+              </div>
+            </div>
+            <div className="space-y-4">
+              <div className="flex items-center gap-2">
+                <Button  size="medium">
+                  Accent
+                </Button>
+                <Button  size="medium" icon={{icon:RiUser2Fill}}>
+                  Accent
+                </Button>
+                <Button  size="medium" variant="secondary">
+                  Accent
+                </Button>
+                <Button  size="medium" variant="ico">
+                  Accent
+                </Button>
+                <Button  size="medium" variant="accent" icon={{icon:RiUser2Fill}}>
+                  Accent
+                </Button>
+              </div>
+            </div>
+            <div className="space-y-4">
+              <div className="flex items-center gap-2">
+                <Button  size="large">
+                  Accent
+                </Button>
+                <Button  size="large" icon={{icon:RiUser2Fill}}>
+                  Accent
+                </Button>
+                <Button  size="large" variant="secondary">
+                  Accent
+                </Button>
+                <Button  size="large" variant="ico">
+                  Accent
+                </Button>
+                <Button  size="large" variant="accent" icon={{icon:RiUser2Fill}}>
+                  Accent
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
