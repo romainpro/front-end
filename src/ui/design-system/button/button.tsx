@@ -85,21 +85,25 @@ export const Button=({
         <>
             <button
                 type="button"
-                className={clsx(variantStyles,icoSize,sizeStyles, isLoading && "cursor-wait")} 
+                className={clsx(variantStyles,icoSize,sizeStyles, isLoading && "cursor-wait",
+                isLoading && "cursor-wait","relative")} 
                 onClick={()=>console.log("click")} 
                 disabled={disabled}
             >
                 
-                {isLoading &&(
-                    <div className="">
-                        <Spinner size="small"/>
-                    
-                </div>)}:
+            
+                {isLoading && (
+                        <div className="absolute inset-0 flex items-center justify-center">{
+                        variant==="accent" || variant ==="ico"?
+                        (<Spinner size="small" variant="white"/>):
+                        (<Spinner size="small"/>)}
+                         
+                </div>)}
 
             <div className={clsx(isLoading && "invisible")}>
                 {icon && variant === "ico"? (
                 <icon.icon size={icoSize}/>
-                ):(
+                ) : (
                 
                 <div className=" flex gap-4 items-center">
                     {icon && iconPosition ==="left" && (
