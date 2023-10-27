@@ -1,4 +1,5 @@
 import { Container } from "@/ui/components/container/container";
+import { Footer } from "@/ui/components/navigation/footer";
 import { Navigation } from "@/ui/components/navigation/navigation";
 import { Avatar } from "@/ui/design-system/avatar/avatar";
 import { Button } from "@/ui/design-system/button/button";
@@ -11,7 +12,7 @@ export default function Home() {
   return (
     <>
     <Navigation/>
-
+    <Footer/>
     </>
   );
 }
