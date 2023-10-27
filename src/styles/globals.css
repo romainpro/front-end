@@ -8,3 +8,17 @@
         font-family: inter, system-ui, sans-serif;
     }
 }
+
+a:hover{
+    @apply text-primary 
+}
+
+.animate,
+ a,
+  a:hover{
+    -webkit-transition: all 0.2 ease-in-out; ;
+    -moz-transition: all 0.2 ease-in-out; ;
+    -o-transition: all 0.2 ease-in-out; ;
+    -ms-transition: all 0.2 ease-in-out;
+    transition: all 0.2 ease-in-out;
+}
