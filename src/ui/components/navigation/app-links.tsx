@@ -23,7 +23,7 @@ import { AppLinks } from "@/types/app-links";
     },
 ];
 
-const footerUsersLinks: AppLinks[]=[
+export const footerUsersLinks: AppLinks[]=[
     {
         label:"Mon espace",
         baseUrl:"/#",
@@ -86,3 +86,23 @@ const footerSocialNetworksLinks: AppLinks[]=[
         type:"external",
     },
 ]
+
+
+ export const footerLinks = [
+    {
+        label:"App",
+        links: footerAppLinks
+    },
+    {
+        label:"utilisateurs",
+        links: footerUsersLinks
+    },
+    {
+        label:"Information",
+        links: footerInformationLinks
+    },
+    {
+        label:"Réseaux",
+        links: footerSocialNetworksLinks
+    },
+] 
