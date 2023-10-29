@@ -8,17 +8,17 @@ import { AppLinks } from "@/types/app-links";
     },
     {
         label:"Projets",
-        baseUrl:"/",
+        baseUrl:"/#",
         type:"internal"
     },
     {
         label:"Coders Romain",
-        baseUrl:"/",
+        baseUrl:"/#",
         type:"internal"
     },
     {
         label:"Fromation",
-        baseUrl:"/",
+        baseUrl:"/#",
         type:"external"
     },
 ];

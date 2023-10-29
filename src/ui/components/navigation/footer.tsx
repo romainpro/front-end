@@ -3,6 +3,7 @@ import { Container } from "../container/container"
 import Image from "next/image"
 import { footerAppLinks } from "./app-links";
 import {v4 as uuidv4} from 'uuid'
+import { ActiveLink } from "./active-link";
 export const Footer=()=>{
 
     const currentYear=new Date().getFullYear();
@@ -38,7 +39,7 @@ export const Footer=()=>{
                     </a>
                 </div>
                 <div className="">
-                    {footerNavigationList}
+                    <FooterLink/>
                 </div>
             </Container>
             <Container className="pt-9 pb-11 space-y-11">
@@ -59,9 +60,39 @@ export const Footer=()=>{
 };
 
 const FooterLink = ()=>{
+
+    const LinksList = footerAppLinks.map((link)=>(
+        <div key={uuidv4()}>
+            {link.type=== "internal" &&
+            <ActiveLink key={uuidv4()} href={link.baseUrl}>{link.label}</ActiveLink>
+            }{link.type ==="external" &&
+                <a href={link.baseUrl} target="_blank">{link.label}</a>
+
+            }
+
+        </div>
+    ));
+
     return(
-        <div>
-            
+        <div className="min-[190px]">
+            <Typography
+                theme="white"
+                variant="caption2"
+                weight="medium"
+                className="pb-5">
+
+                    Titre
+
+            </Typography>
+            <Typography 
+            theme="gray" 
+            variant="caption3" 
+            className="space-y-4">
+
+                
+                {LinksList}
+
+            </Typography>
         </div>
     )
 
