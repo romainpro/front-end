@@ -1,15 +1,10 @@
 import { Typography } from "@/ui/design-system/typography/typography";
 import { Container } from "../container/container";
 import Image from "next/image";
-import {
-  footerAppLinks,
-  footerLinks,
-  FooterLinks,
-  footerUsersLinks,
-} from "./app-links";
+import { footerLinks } from "./app-links";
 import { v4 as uuidv4 } from "uuid";
 import { ActiveLink } from "./active-link";
-import { AppLinks } from "@/types/app-links";
+import { FooterLinks } from "@/types/app-links";
 import { LinkTypes } from "@/lib/link-types";
 
 export const Footer = () => {

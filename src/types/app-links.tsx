@@ -1,7 +1,9 @@
+import { LinkType } from "@/lib/link-types";
+
 export interface AppLinks{
     label:string;
     baseUrl:string;
-    type:string; //@todo refactor this
+    type:LinkType; 
 }
 export interface FooterLinks{
     label:string;
