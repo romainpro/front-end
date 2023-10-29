@@ -6,6 +6,7 @@ import { v4 as uuidv4 } from "uuid";
 import { ActiveLink } from "./active-link";
 import { FooterLinks } from "@/types/app-links";
 import { LinkTypes } from "@/lib/link-types";
+import { SocialNetworksButton } from "./sacial-networks-button";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -16,7 +17,7 @@ export const Footer = () => {
 
   return (
     <div className="bg-gray">
-      <Container className="flex justify-between pt-16">
+      <Container className="flex justify-evenly pt-16">
         <div className=" flex flex-col items-center gap-1">
           <Typography variant="caption1" theme="white" weight="medium">
             Formartion gratuites
@@ -56,7 +57,9 @@ export const Footer = () => {
             </a>
             {`  - Remote Romain`}
           </Typography>
-          <div className=""></div>
+          <div className="">
+            <SocialNetworksButton />
+          </div>
         </div>
       </Container>
     </div>

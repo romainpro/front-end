@@ -69,7 +69,7 @@ const footerInformationLinks: AppLinks[]=[
     },
 ]
 
-const footerSocialNetworksLinks: AppLinks[]=[
+export const footerSocialNetworksLinks: AppLinks[]=[
     {
         label:"Youtube",
         baseUrl:"https://www.youtube.com",
