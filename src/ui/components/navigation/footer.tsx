@@ -6,7 +6,7 @@ import { v4 as uuidv4 } from "uuid";
 import { ActiveLink } from "./active-link";
 import { FooterLinks } from "@/types/app-links";
 import { LinkTypes } from "@/lib/link-types";
-import { SocialNetworksButton } from "./sacial-networks-button";
+import { SocialNetworksButton } from "./social-networks-button";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -58,7 +58,7 @@ export const Footer = () => {
             {`  - Remote Romain`}
           </Typography>
           <div className="">
-            <SocialNetworksButton />
+            <SocialNetworksButton theme="gray" />
           </div>
         </div>
       </Container>

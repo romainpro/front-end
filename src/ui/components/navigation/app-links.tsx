@@ -1,4 +1,5 @@
 import { AppLinks } from "@/types/app-links";
+import { RiLinkedinFill, RiSlackFill, RiYoutubeFill } from "react-icons/ri";
 
  export const footerAppLinks:AppLinks[]=[
     {
@@ -46,26 +47,26 @@ export const footerUsersLinks: AppLinks[]=[
     },
 ];
 
-const footerInformationLinks: AppLinks[]=[
+ export const footerInformationLinks: AppLinks[]=[
     {
         label:"CGU",
         baseUrl:"/#",
-        type:"internal"
+        type:"internal",
     },
     {
         label:"Confidentialité",
         baseUrl:"/#",
-        type:"internal"
+        type:"internal",
     },
     {
         label:"A propos",
         baseUrl:"/#",
-        type:"internal"
+        type:"internal",
     },
     {
         label:"Contact",
         baseUrl:"/#",
-        type:"internal"
+        type:"internal",
     },
 ]
 
@@ -74,18 +75,21 @@ export const footerSocialNetworksLinks: AppLinks[]=[
         label:"Youtube",
         baseUrl:"https://www.youtube.com",
         type:"external",
+        icon: RiYoutubeFill,
     },
     {
         label:"Linkedin",
         baseUrl:"https://www.linkedin.com",
         type:"external",
+        icon: RiLinkedinFill,
     },
     {
         label:"slack",
         baseUrl:"https://www.slack.com",
         type:"external",
+        icon:RiSlackFill,
     },
-]
+];
 
 
  export const footerLinks = [
@@ -105,4 +109,4 @@ export const footerSocialNetworksLinks: AppLinks[]=[
         label:"Réseaux",
         links: footerSocialNetworksLinks
     },
-] 
+] ;
