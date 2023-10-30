@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export const HeroTopView=()=>{
     return(
-        <Container className="">
+        <Container className="relative pt-40  pb-52 overflow-hidden " >
             <div>
 
             </div>
@@ -13,7 +13,7 @@ export const HeroTopView=()=>{
             alt="rocket" 
             width={811}
             height={596}
-            className=""
+            className="absolute top-0 right-0 z-0 "
             />
             
         </Container>
