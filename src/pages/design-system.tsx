@@ -1,5 +1,6 @@
 // COMPONENT
 import { Container } from "@/ui/components/container/container";
+import { Layout } from "@/ui/components/layout/layout";
 import { Navigation } from "@/ui/components/navigation/navigation";
 // DESIGN SYSTEM
 import { Avatar } from "@/ui/design-system/avatar/avatar";
@@ -13,7 +14,7 @@ import { RiUser2Fill } from "react-icons/ri";
 export default function DesignSystem() {
   return (
     <>
-      <Navigation />
+     <Layout>
 
       <Container className="space-y-25">
         {/* Typography */}
@@ -266,6 +267,7 @@ export default function DesignSystem() {
           </div>
         </div>
       </Container>
+      </Layout>
     </>
   );
 }
