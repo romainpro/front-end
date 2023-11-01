@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export const CodersMonkeusSlackView = () => {
   return (
-    <Container className="flex justify-between gap-5">
+    <Container className="flex justify-between">
       <div className=" flex flex-col justify-center max-w-2xl space-y-5">
         <div className=" flex items-center gap-2">
           <Logo size="very-small" />
