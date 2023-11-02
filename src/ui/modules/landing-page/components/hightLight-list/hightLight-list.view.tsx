@@ -27,6 +27,24 @@ export const HightlightListView = () => {
         </div>
         </div>
       </div>
+      <div className="flex flex-row-reverse justify-center gap-24">
+        <div className="w-[520px] h-[350px] relative mt-10">
+          <Image fill src="/assets/svg/top.svg" alt="cake" />
+        </div>
+        <div className="max-w-md space-y-7">
+          <Typography variant="h3" component="h2">
+          Booste ta carrière de développeur          </Typography>
+         <ListPoint>Partage tes projets, obtiens des feedbacks..</ListPoint>
+         <ListPoint>Connecte-toi, élargis ton réseau pro!</ListPoint>
+         <ListPoint>Reste inspiré, motivé avec notre communauté.</ListPoint>
+        <div className="relative inline-block">
+          <Button variant="secondary" baseUrl="/#" icon={{icon: RiArrowRightCircleLine }} 
+          iconPosition="right">
+            Démarrer
+          </Button>
+        </div>
+        </div>
+      </div>
     </Container>
   );
 };
