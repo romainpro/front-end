@@ -18,11 +18,12 @@ export const HightlightListView = () => {
          <ListPoint>Progresse rapidement.</ListPoint>
          <ListPoint>Inspire-toi.</ListPoint>
          <ListPoint>Gagne de l'assurance.</ListPoint>
-        <div className="relative">
+        <div className="relative inline-block">
           <Button baseUrl="/#" icon={{icon: RiArrowRightCircleLine }} 
           iconPosition="right">
             Let's go
           </Button>
+          <Image width={25} height={27} src="assets/svg/cursor.svg" alt="une curseur..." className="absolute right-7 -bottom-5"/>
         </div>
         </div>
       </div>
