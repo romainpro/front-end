@@ -5,7 +5,7 @@ import { LinkType, LinkTypes } from "@/lib/link-types";
 
 interface Props{
     size?: "small"| "medium"|"large"
-    variant?: "accent"|"secondary"|"outline"|"disabled"|"ico";
+    variant?: "accent"|"secondary"|"outline"|"disabled"|"ico" | "success";
     icon?: IconProps;
     iconTheme?: "accent"|"secondary"|"gray";
     iconPosition?: "left"|"right";
@@ -49,6 +49,9 @@ export const Button=({
             break;
         case "disabled":
             variantStyles = "bg-gray-400 border border-gray-500 text-gray-600 rounded cursor-not-allowed";
+            break;
+        case "success":
+            variantStyles = "bg-secondary hover:bg-secondary-400 text-white rounded";
             break;
         case "ico":
                 if(iconTheme==="accent"){ //DEFAULT

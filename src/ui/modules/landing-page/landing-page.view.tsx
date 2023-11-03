@@ -1,3 +1,4 @@
+import { CallToActionView } from "@/ui/design-system/call-to-action.view/call-to-action.view"
 import { CodersMonkeusSlackView } from "./components/coders-monkeys-slack/coders-monkeys-slack.view"
 import { CurrentCourseCtaView } from "./components/current-course-cta/current-course-cta.view"
 import { Featured } from "./components/featured/featured.view"
@@ -11,5 +12,6 @@ export const LandingPageView=()=>{
     <CodersMonkeusSlackView/>
     <CurrentCourseCtaView/>
     <HightlightListView/>
+    <CallToActionView/>
     </>
 }
