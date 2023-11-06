@@ -12,6 +12,6 @@ export const LandingPageView=()=>{
     <CodersMonkeusSlackView/>
     <CurrentCourseCtaView/>
     <HightlightListView/>
-    <CallToActionView/>
+    {/* <CallToActionView/> */}
     </>
 }

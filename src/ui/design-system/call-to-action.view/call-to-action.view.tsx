@@ -23,7 +23,7 @@ export const CallToActionView = () => {
           </div>
         </div>
         <div>
-            <Image width={1210} height={12010} src="assets/svg/Group 52.svg" alt="bomb.."/>
+            <Image width={1210} height={12010} src="assets/svg/Group 52.svg" alt="bomb.." className="absolute -button-[620px] -right-[150px]"/>
         </div>
       </Container>
     </div>
