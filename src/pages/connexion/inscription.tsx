@@ -5,7 +5,7 @@ export default function Register() {
   return (
     <>
    <Layout>
-
+    <Register/>
    </Layout>
     </>
   );
