@@ -1,0 +1,22 @@
+import clsx from "clsx";
+
+interface Props{
+    children:React.ReactNode;
+    className?:string;
+    padding_x?:string
+    padding_y?:string
+}
+
+
+export const Box=({children,className,padding_x="9",padding_y="9"}:Props)=>{
+    return(
+        <div className={clsx(
+            "w-full boder border-gray-400 rounded",
+            padding_x,
+            padding_y,
+            className
+        )}>
+            {children}
+        </div>
+    )
+}
