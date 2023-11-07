@@ -1,4 +1,5 @@
 import { Container } from "@/ui/components/container/container";
+import { Box } from "@/ui/design-system/box/box";
 import Image from "next/image";
 
 export const RegisterView = () => {
@@ -9,7 +10,11 @@ export const RegisterView = () => {
             <Image fill src="/assets/svg/charater-1.svg" alt="register" className=""/>
         </div>
       </div>
-      <div> contenu</div>
+      <div> 
+        <Box padding_y="py-5" padding_x="px-9">
+          contenu
+        </Box>
+      </div>
     </Container>
   );
 };
