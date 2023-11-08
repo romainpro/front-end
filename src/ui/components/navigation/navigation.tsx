@@ -34,8 +34,8 @@ export const Navigation = ({}: NavigationProps) => {
                 </Typography>
         
                 <div className="flex items-center gap-2">
-                    <Button size="small">Conexion</Button>
-                    <Button size="small" variant="secondary">Rejoindre</Button>
+                    <Button baseUrl="/connexion" size="small">Conexion</Button>
+                    <Button  baseUrl="/connexion/insription" size="small" variant="secondary">Rejoindre</Button>
                     
                 </div>
             </div>
