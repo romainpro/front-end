@@ -5,7 +5,7 @@ import { LandingPageContainer } from "@/ui/modules/landing-page/landing-page.con
 export default function Home() {
   return (
     <>
-   <Layout>
+   <Layout isDisplayBreadcrumbs={false}>
     <LandingPageContainer/>
    </Layout>
     </>

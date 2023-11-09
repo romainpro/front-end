@@ -4,6 +4,11 @@ import { Typography } from "@/ui/design-system/typography/typography";
 import Image from "next/image";
 import Link from "next/link";
 import { RegisterFrom } from "./register.form";
+import { FormType } from "@/types/forms";
+
+interface Props{
+  form:FormType
+}
 
 export const RegisterView = () => {
   return (
