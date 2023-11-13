@@ -16,8 +16,8 @@ export const HeroTopView=()=>{
                     Rejoins notre tribu de singes codeurs, partage tes projets les plus fous et fais-toi de nouveaux amis développeurs.
                     </Typography>
                     <div className="space-x-5 pt-2.5">
-                        <Button baseUrl="">Commencer</Button>
-                        <Button baseUrl="" variant="secondary">En savoir plus</Button>
+                        <Button baseUrl="/connexion/inscription">Commencer</Button>
+                        <Button baseUrl="/" variant="secondary">En savoir plus</Button>
                     </div>
             </div>
             <Image

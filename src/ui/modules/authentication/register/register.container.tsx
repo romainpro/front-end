@@ -4,7 +4,8 @@ import { RegisterFormFielsType } from "@/types/forms";
 
 export const RegisterContainer = () => {
 
-  const isloading =false
+  const isloading =false;
+
   const { 
     handleSubmit,
     control,
@@ -29,6 +30,7 @@ const onSubmit: SubmitHandler<RegisterFormFielsType> = async (formData)=>{
           register,
           handleSubmit,
           onSubmit,
+          isloading,
         }}
     </>
   );

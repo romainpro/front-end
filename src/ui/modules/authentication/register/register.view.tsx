@@ -10,7 +10,7 @@ interface Props{
   form:FormType
 }
 
-export const RegisterView = () => {
+export const RegisterView = ({form}:Props) => {
   return (
     <Container className="grid grid-cols-2 gap-20 mb-32">
       <div className=" flex items-center">
@@ -38,7 +38,7 @@ export const RegisterView = () => {
               </Typography>
             </div>
           </div>
-          <RegisterFrom/>
+          <RegisterFrom form={form}/>
         </Box>
       </div>
     </Container>

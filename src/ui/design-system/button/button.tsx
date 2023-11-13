@@ -2,6 +2,7 @@ import { IconProps } from "@/types/iconProps";
 import clsx from "clsx";
 import { Spinner } from "../spinner/spinner";
 import { LinkType, LinkTypes } from "@/lib/link-types";
+import Link from "next/link";
 
 interface Props{
     size?: "small"| "medium"|"large"
@@ -146,8 +147,8 @@ export const Button=({
             )
         };
       }else{
-        
-        return <a href={baseUrl}>{buttonElement}</a>
+        const linkHref = baseUrl || "/";
+        return<Link href={linkHref}> {buttonElement} </Link>
 
       }
       return buttonElement
