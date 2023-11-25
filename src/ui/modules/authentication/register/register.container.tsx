@@ -23,15 +23,17 @@ const onSubmit: SubmitHandler<RegisterFormFielsType> = async (formData)=>{
 
   return (
     <>
-      <RegisterView />
-        form={{
-          errors,
-          control,
-          register,
-          handleSubmit,
-          onSubmit,
-          isloading,
-        }}
+<RegisterView
+  form={{
+    control,
+    errors,
+    register,
+    handleSubmit,
+    onSubmit,
+    isloading,
+  }}
+/>
+
     </>
   );
 };

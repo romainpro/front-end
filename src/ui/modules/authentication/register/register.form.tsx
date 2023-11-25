@@ -5,6 +5,7 @@ interface Props {
 }
 
 export const RegisterFrom = ({ form }: Props) => {
+  
     const { control, onsubmit, errors, isLoading, register, handleSubmit } = form;
 
   
@@ -12,7 +13,7 @@ export const RegisterFrom = ({ form }: Props) => {
   <form onSubmit={handleSubmit(onsubmit)}>
     <input defaultValue="test" {...register("example")} />
 
-    <input {...register("exampleRequided",{required:true})}/>
+    <input placeholder="test 2" {...register("exampleRequided",{required:true})}/>
 
     {errors.exampleRequided && <span> This field is required</span>}
 
