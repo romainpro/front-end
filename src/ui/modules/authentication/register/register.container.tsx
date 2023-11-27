@@ -31,6 +31,7 @@ const onSubmit: SubmitHandler<RegisterFormFielsType> = async (formData)=>{
     handleSubmit,
     onSubmit,
     isloading,
+    
   }}
 />
 
